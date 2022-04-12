@@ -112,7 +112,8 @@ function initialize()
 		type: 'pattern', patternUrl: "data/pattern-marker.patt",
 	})
 
-	let geometry1 = new THREE.SphereGeometry(3, 32,32);
+	let geometry1 = new THREE.SphereGeometry(3, 32, 32, 0, 3.14);
+	//SphereGeometry(radius : Float, widthSegments : Integer, heightSegments : Integer, phiStart : Float, phiLength : Float, thetaStart : Float, thetaLength : Float)
 	
 	let loader = new THREE.TextureLoader();
 	let texture = loader.load( 'images/earth-sphere.jpg', render );
